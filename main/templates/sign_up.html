@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>hello our candidats:</h1>
+
+
+
+    <form method="POST" >
+    {% csrf_token %}  
+        <div class="form-group">
+            <input type="text" class="form-control"  aria-describedby="emailHelp"
+            placeholder="first name" name="l_name">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control"  aria-describedby="emailHelp"
+            placeholder="last name" name="f_name">
+          </div>
+
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="email adress" name="email">
+        </div>
+
+
+        <div class="form-group">
+          <input type="integer" class="form-control" id="exampleInputPassword1"
+          placeholder="telephone" name="num_tel">
+        </div>
+
+        
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">school</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="school">
+            <option value="Al Khwarizmi">Al Khwarizmi</option>
+            <option value="FGSES">FGSES</option>
+            <option value="EMINES">EMINES</option>
+            <option value="ABS">ABS</option>
+            <option value="SCI">SCI</option>
+            <option value="SHBM">SHBM</option>
+            <option value="SAP+D">SAP+D</option>
+            <option value="CBS/GPE">CBS/GPE</option>
+            <option value="MSN">MSN</option>
+            <option value="GTI">GTI</option>
+            <option value="GSM">GSM</option>
+            <option value="CIAM">CIAM</option>
+            <option value="1337">1337</option>
+            <option value="1337">1337</option>
+            <option value="MAHIR">MAHIR</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="first partner" name="first_participant">
+        </div>
+
+
+       
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="second partner" name="second_participant">
+        </div>
+
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="third partner" name="third_participant">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="project name" name="project_name">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">theme</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="theme">
+            <option value="Education">Education</option>
+            <option value="Mental Health And Wellness">Mental Health And Wellness</option>
+            <option value="Student Organizations And Events">Student Organizations And Events</option>
+          </select>
+        </div>
+
+     
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="description" name="description">
+        </div>
+        <button type="submit" class="btn btn-primary">sign up</button>
+    </form>
+{% endblock%}

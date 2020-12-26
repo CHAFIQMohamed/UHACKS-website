@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+
+
+<!DOCTYPE html>
+{% block content %}
+<html lang="en">
+
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Elegance - Creative HTML5 Template</title>
+<!--
+Elegance Template
+https://templatemo.com/tm-528-elegance
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cssform/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cssform/font-awesome.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cssform/fullpage.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cssform/owl.carousel.css' %}">
+
+    <link rel="stylesheet" href="{% static 'cssform/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'cssform/templatemo-style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'cssform/responsive.css' %}">
+
+    </head>
+    <body>
+    
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="#" id="logo" title="Elegance by TemplateMo">
+                            
+                    </a>
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide02">Home</a></li>
+                                    
+                                   
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <video autoplay muted loop id="myVideo">
+          <source src="{% static 'imagesform/video-bg.mp4' %}" type="video/mp4">
+        </video>
+
+        <div id="fullpage" class="fullpage-default">
+
+            <div class="section animated-row" data-section="slide01">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h1>Let  your  entrepreneurial    journey  begins</h1>
+                                <h8>UHACKS community wants to teach students how to turn their ideas into real applications by learning from experts’ strengths self-motivated, skilful, passionate people. It is your chance to meet new people and working together in in an atmosphere full of enthusiasm and entertainment.</h8>
+                            </div>
+                            <div class="contact-section">
+                            
+                              <form method="POST" >
+    {% csrf_token %}  
+        <div class="form-group">
+            <h6>Participant #1 - Team Captain *</h6>
+            <input type="text" class="form-control"  aria-describedby="emailHelp"
+            placeholder="First name *" name="l_name">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control"  aria-describedby="emailHelp"
+            placeholder="Last name *" name="f_name">
+          </div>
+
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Email adress *" name="email">
+        </div>
+
+
+        <div class="form-group">
+          <input type="integer" class="form-control" id="exampleInputPassword1"
+          placeholder="Phone number *" name="num_tel">
+        </div>
+
+        
+        <div class="form-group">
+            <h6>school *</h6>
+          <label for="exampleFormControlSelect1"></label>
+          <select class="form-control" id="exampleFormControlSelect1" name="school">
+            <option value="Al Khwarizmi">Al Khwarizmi</option>
+            <option value="FGSES">FGSES</option>
+            <option value="EMINES">EMINES</option>
+            <option value="ABS">ABS</option>
+            <option value="SCI">SCI</option>
+            <option value="SHBM">SHBM</option>
+            <option value="SAP+D">SAP+D</option>
+            <option value="CBS/GPE">CBS/GPE</option>
+            <option value="MSN">MSN</option>
+            <option value="GTI">GTI</option>
+            <option value="GSM">GSM</option>
+            <option value="CIAM">CIAM</option>
+            <option value="1337">1337</option>
+            <option value="1337">1337</option>
+            <option value="MAHIR">MAHIR</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+            <h7>Participant #2 </h7>
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="" name="first_participant">
+        </div>
+
+
+       
+        <div class="form-group">
+            <h7>Participant #3 </h7>
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="" name="second_participant">
+        </div>
+
+
+        <div class="form-group">
+            <h7>Participant #4 </h7>
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="" name="third_participant">
+        </div>
+        <div class="form-group">
+        <h6>project name</h6>
+          <input type="text" class="form-control" id="exampleInputPassword1"
+          placeholder="" name="project_name">
+        </div>
+        <div class="form-group">
+            <h6>Project Theme</h6>
+          <label for="exampleFormControlSelect1"></label>
+          <select class="form-control" id="exampleFormControlSelect1" name="theme">
+            <option value="Education">Education</option>
+            <option value="Mental Health And Wellness">Mental Health And Wellness</option>
+            <option value="Student Organizations And Events">Student Organizations And Events</option>
+          </select>
+        </div>
+
+     
+        <div class="input-field">
+          <h6>Project Description </h6>
+          <textarea type="text" class="form-control" id="exampleInputPassword1"
+          required placeholder="description" name="description">
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+       
+    </div>  
+
+    <script src="{% static 'jsform/jquery.js' %}"></script>
+
+    <script src="{% static 'jsform/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'jsform/fullpage.min.js' %}"></script>
+
+    <script src="{% static 'jsform/scrolloverflow.js' %}"></script>
+
+    <script src="{% static 'jsform/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'jsform/jquery.inview.min.js' %}"></script>
+
+    <script src="{% static 'jsform/form.js' %}"></script>
+
+    <script src="{% static 'jsform/custom.js' %}"></script>
+
+
+  </body>
+  
+</html>
+{% endblock%}
