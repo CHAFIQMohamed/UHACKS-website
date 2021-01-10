@@ -71,7 +71,6 @@ python-dateutil==2.8.1
 python-dotenv==0.13.0
 python-qt==0.50
 pytz==2020.4
-pywin32==222
 pywinpty==0.5.7
 pyzmq==19.0.2
 s3transfer==0.3.3
